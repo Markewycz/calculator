@@ -10,6 +10,7 @@ body {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 1.2em;
+  font-weight: 500;
 
   -webkit-user-select: none; /* Safari */
   -moz-user-select: none; /* Old versions of Firefox */
@@ -30,7 +31,7 @@ body {
   justify-content: space-evenly;
   width: 300px;
   height: 600px;
-  border-radius: 25px;
+  border-radius: 35px;
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
   background-color: #243441;
   padding: 15px;
@@ -69,7 +70,7 @@ body {
   border-radius: 10px;
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2),
     0px -1px 1px rgba(155, 155, 155, 0.1);
-  transition: 0.05s all ease-in;
+  transition: 0.03s all ease-in;
   cursor: pointer;
 }
 
