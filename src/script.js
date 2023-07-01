@@ -214,11 +214,7 @@ const functions = {
       mainDisplayArray.includes(0)
     ) {
       alert("Dividing by 0? You dummy.");
-      operators.forEach((button) => {
-        button.classList.remove("active");
-        if (button.dataset.deleteType === "divide")
-          button.classList.add("active");
-      });
+      functions.clear();
       return true;
     }
   },
