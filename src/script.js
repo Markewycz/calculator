@@ -65,7 +65,7 @@ operators.forEach((btn) => {
       functions.clearMainArray();
     } else {
       // Check for divide by 0
-      if (!functions.forbiddenDivide()) return;
+      if (functions.forbiddenDivide()) return;
 
       functions.operate(
         functions.findKey(operationStatus),
@@ -84,7 +84,7 @@ operators.forEach((btn) => {
 resultBtn.addEventListener("click", () => {
   const key = functions.findKey(operationStatus);
   if (!key || mainDisplayArray.length === 0) return;
-  if (!functions.forbiddenDivide()) return;
+  if (functions.forbiddenDivide()) return;
 
   functions.calcHistory();
   functions.operate(key, functions.isFloating(mainDisplayArray));
@@ -210,10 +210,16 @@ const functions = {
   forbiddenDivide: () => {
     if (
       functions.findKey(operationStatus) === "divide" &&
+      mainDisplayArray.length === 1 &&
       mainDisplayArray.includes(0)
     ) {
       alert("Dividing by 0? You dummy.");
-      return false;
+      operators.forEach((button) => {
+        button.classList.remove("active");
+        if (button.dataset.deleteType === "divide")
+          button.classList.add("active");
+      });
+      return true;
     }
   },
 };
