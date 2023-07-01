@@ -91,10 +91,14 @@ body {
 }
 
 .btn:last-child {
-  width: 120px;
+  width: 128px;
   height: 55px;
   background-color: #ed802e;
   color: #fff;
+}
+.btn:first-child {
+  width: 128px;
+  height: 55px;
 }
 
 .btn:active {
