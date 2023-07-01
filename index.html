@@ -17,44 +17,48 @@
       src="https://kit.fontawesome.com/4616b97752.js"
       crossorigin="anonymous"
     ></script>
-    <script src="src/script.ts" defer></script>
+    <script src="src/script.js" defer></script>
   </head>
   <body>
     <div class="container">
       <div class="calculator">
         <!-- <div class="theme-changer"></div> -->
         <div class="display">
-          <div class="display-main">2137</div>
-          <div class="display-sub">37+2000+30002</div>
+          <div class="display-main">-</div>
+          <div class="display-sub"></div>
         </div>
         <div class="buttons">
-          <div class="btn operator">AC</div>
-          <div class="btn operator">
+          <div class="btn delete" data-delete-type="clear">AC</div>
+          <div class="btn delete" data-delete-type="delete">
             <i class="fa-solid fa-delete-left"></i>
           </div>
-          <div class="btn operator"><i class="fa-solid fa-percent"></i></div>
-          <div class="btn operator"><i class="fa-solid fa-divide"></i></div>
+          <div class="btn percent" data-operation-type="percent">
+            <i class="fa-solid fa-percent"></i>
+          </div>
+          <div class="btn operator" data-operation-type="divide">
+            <i class="fa-solid fa-divide"></i>
+          </div>
 
-          <div class="btn">1</div>
-          <div class="btn">2</div>
-          <div class="btn">3</div>
+          <div class="btn number">1</div>
+          <div class="btn number">2</div>
+          <div class="btn number">3</div>
 
-          <div class="btn operator">x</div>
+          <div class="btn operator" data-operation-type="multiply">x</div>
 
-          <div class="btn">4</div>
-          <div class="btn">5</div>
-          <div class="btn">6</div>
+          <div class="btn number">4</div>
+          <div class="btn number">5</div>
+          <div class="btn number">6</div>
 
-          <div class="btn operator">+</div>
+          <div class="btn operator" data-operation-type="subtract">-</div>
 
-          <div class="btn">7</div>
-          <div class="btn">8</div>
-          <div class="btn">9</div>
+          <div class="btn number">7</div>
+          <div class="btn number">8</div>
+          <div class="btn number">9</div>
 
-          <div class="btn operator">-</div>
-          <div class="btn">0</div>
-          <div class="btn">.</div>
-          <div class="btn">=</div>
+          <div class="btn operator" data-operation-type="add">+</div>
+          <div class="btn number">0</div>
+          <div class="btn number">.</div>
+          <div class="btn result">=</div>
         </div>
       </div>
     </div>
