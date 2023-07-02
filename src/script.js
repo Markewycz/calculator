@@ -16,7 +16,6 @@ const operationStatus = {
   subtract: false,
   divide: false,
   multiply: false,
-  percent: false,
 };
 
 // ============ NUMBER BUTTONS ============
