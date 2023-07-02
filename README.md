@@ -29,9 +29,11 @@ The calculator has a graphical user interface with number buttons, operator butt
   * Open ```index.html``` in your browser.
 
 ### Screenshots
-  ![](images/sc1.png)
-  ![](images/sc2.png)
-  ![](images/sc3.png)
+  <div style="display: flex;">
+  <img src="images/sc1.png" alt="Screenshot 1" style="width: 33%;">
+  <img src="images/sc2.png" alt="Screenshot 2" style="width: 33%;">
+  <img src="images/sc3.png" alt="Screenshot 3" style="width: 33%;">
+</div>
 
 ### Known Bugs
   * In the calculator history, the previously selected operator is shown after the result button, following the last digit.
