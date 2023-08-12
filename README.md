@@ -11,7 +11,7 @@
 - Chain calculating and displaying it.
 - Visually pleasing design.
 
-### <a href="https://markewycz.github.io/todo-list/">Live demo</a> 👈
+### <a href="https://markewycz.github.io/calculator/">Live demo</a> 👈
 
 ### Screenshots
   <div style="display: flex;">
